@@ -1,0 +1,97 @@
+body {
+	padding: 0;
+	margin: 0;
+/*	overflow: hidden;*/
+	background-color: black;
+}
+#head {
+	color: white;
+	font-size: 4vw;
+}
+#subHead {
+	color: white;
+	font-size: 1.5vw;
+}
+#titleDisp {
+	margin: 0;
+	width: 200vw;
+	height: 100vh;
+	background-image:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.3), 
+      		rgba(0, 0, 0, 0.3)
+    	),
+		url("/img/me.png");
+	background-size: 125% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 30vh;
+	margin-bottom: -30vh;
+	padding-left: 5vw;
+	display: flex;
+	flex-flow: row;
+	transition: all ease 1.5s;
+}
+#toResume {
+	width: 100vw;
+}
+button {
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+	border: none;
+	border-radius: 1px;
+	padding: 0 2vw 0 2vw;
+	font-size: 3vw;
+	transition: all ease 0.5s;
+	margin-top: 10px;
+	max-width: 30vw;
+}
+#textDiv {
+/*	margin-left: -100vw;*/
+	transition: all ease 1.5s;
+	width: 95vw;
+}
+#butDiv {
+	margin-left: 5vw;
+	display: flex;
+	flex-flow: column;
+	width: 100vw;
+}
+#resume {
+	margin-left: 4vw;
+	width: 100vw;
+	transition: all ease 1s;
+}
+#contact {
+	margin-left: 8vw;
+	transition: all ease 1.2s;
+}
+#works {
+	margin-left: 12vw;
+	transition: all ease 1.4s;
+}
+button:hover {
+	padding-left: 10vw;
+}
+#start:hover {
+	padding-left: 2vw;
+	transition: all ease 0.5s;
+	margin-left: 0.5vw;
+}
+#contactDisp {
+	width: 100vw;
+	height: 70vh;
+	background-image: url("/img/spc.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 40vh;
+}
+#contDiv {
+	padding-left: 5vw;
+	width: 100vw;
+}
+#return {
+	width: 30vw;
+}
