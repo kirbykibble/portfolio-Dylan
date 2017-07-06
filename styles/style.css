@@ -1,8 +1,22 @@
 body {
 	padding: 0;
 	margin: 0;
-/*	overflow: hidden;*/
+	overflow-x: hidden;
+	overflow-y: hidden;
 	background-color: black;
+	font-family: 'Bitter', serif;
+	transition: all ease 0.5s;
+}
+body::-webkit-scrollbar {
+	background-color: rgba(0,0,0,0.6);
+}
+body::-webkit-scollbar-track {
+/*	background-color: rgba(0,0,0,1);*/
+	background-color: white;
+}
+body::-webkit-scrollbar-thumb {
+/*	background-color: rgba(0,0,0,1);*/
+	background-color: white;
 }
 #head {
 	color: white;
@@ -29,7 +43,7 @@ body {
 	margin-bottom: -30vh;
 	padding-left: 5vw;
 	display: flex;
-	flex-flow: row;
+	flex-flow: column;
 	transition: all ease 1.5s;
 }
 #toResume {
@@ -51,11 +65,12 @@ button {
 	transition: all ease 1.5s;
 	width: 95vw;
 }
-#butDiv {
-	margin-left: 5vw;
+#butDiv, #startDiv {
+/*	margin-left: 5vw;*/
 	display: flex;
 	flex-flow: column;
 	width: 100vw;
+	transition: all ease 1.5s;
 }
 #resume {
 	margin-left: 4vw;
@@ -80,18 +95,87 @@ button:hover {
 }
 #contactDisp {
 	width: 100vw;
-	height: 70vh;
-	background-image: url("/img/spc.jpg");
+	height: 60vh;
+	background-image:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.6), 
+      		rgba(0, 0, 0, 0.6)
+    	), url("/img/spc.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	padding-top: 40vh;
+/*	background-color: black;*/
 }
 #contDiv {
 	padding-left: 5vw;
 	width: 100vw;
+	height: 100%;
+/*	background-color: rgba(255,255,255,0.7);*/
+	background: linear-gradient(black, black, black, black, black, black, rgba(0,0,0,0));
+	border-top: solid white 2.5vh;
+/*	border-bottom: solid white 2.5vh;*/
 }
 #return {
 	width: 30vw;
+}
+#buttons {
+	display: flex;
+	flex-flow: row;
+}
+#worksDiv {
+	display: flex;
+	flex-flow: column;
+}
+#cycleBar {
+	width: 2.5vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.9);	
+}
+#item {
+	width: 100vw;
+	height: 60vh;
+	padding-top: 40vh;
+	background-image: 
+		linear-gradient(
+      		rgba(0, 0, 0, 0.6), 
+      		rgba(0, 0, 0, 0.6)
+			), url("/img/placeholder.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#itemOuter {
+	padding-left: 5vw;
+}
+#itemOuter #head {
+	text-decoration: underline;
+}
+
+a {
+	color: white;
+/*	text-decoration: none;*/
+}
+#links {
+	color: white;
+	margin-top: 2vh;
+}
+#worksReturn {
+	position: fixed;
+	top: 1.5vw;
+	right: 2.5vw;
+	width: 5vw;
+	height: 5vw;
+	background-image: url("/img/up.png");
+	background-size: contain;
+	background-position: center;
+	opacity: 0;
+	display: none;
+}
+#worksReturn:hover {
+	padding-left: 0;
+	background-position: 0vw -10vw;
+/*	background-color: ;*/
 }

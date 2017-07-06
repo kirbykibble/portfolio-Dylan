@@ -4,6 +4,9 @@
 		<meta charset="UTF-8">
 		<script src="/socket.io/socket.io.js"></script>
 		<link rel="stylesheet" type="text/css" href="styling/style.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		
 		<script src="scripts/indexbundle.js"></script>
 
 		<title>Dylan Chew</title>
@@ -22,15 +25,19 @@
 					
 				Contact me, let's crack some eggs. 
 				</div>
-                <button ID="start">Learn More</button>
-            </div>
-            <div ID="butDiv">
-			    <a id="toResume" href="https://docs.google.com/document/d/16M_i4JIWSQ0TkGervm6-pLh4J4IbOyqzqL8WyAn1vhg/edit?usp=sharing" target="_blank">
-					<button ID="resume">My Resume</button>
-				</a>
-				<button ID="contact">Contact Me</button>
-				<button ID="works">My Works</button>
 			</div>
+			<div ID="buttons">	
+				<div ID="startDiv">
+                	<button ID="start">Learn More</button>
+				</div>
+            	<div ID="butDiv">
+				    <a ID="toResume" href="https://docs.google.com/document/d/16M_i4JIWSQ0TkGervm6-pLh4J4IbOyqzqL8WyAn1vhg/edit?usp=sharing" target="_blank">
+						<button ID="resume">My Resume</button>
+					</a>
+					<button ID="contact">Contact Me</button>
+					<button ID="works">My Works</button>
+				</div>
+            </div>
         </div>
 		<div ID="contactDisp">
 			<div ID="contDiv">
@@ -46,11 +53,11 @@
 			</div>
 		</div>
 		<div ID="worksDisp">
-			<div ID="wrkDiv">
-				<div ID="item">
-					
-				</div>
+			<div ID="worksDiv">
 			</div>
 		</div>
+		<a href="#top">
+			<button ID="worksReturn"></button>
+		</a>
 	</body>
 </html>
