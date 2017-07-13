@@ -5,7 +5,6 @@ var app = express();
 
 const path = require("path");
 const bodyParser = require("body-parser");
-var navigator = require("web-midi-api");
 
 var pF = path.resolve(__dirname, "public");
 
