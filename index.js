@@ -6,12 +6,11 @@ var app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
 const session = require("express-session");
-const navigator = require("web-midi-api");
+var navigator = require("web-midi-api");
 
 var pF = path.resolve(__dirname, "public");
 
 const server = require("http").createServer(app);
-var io = require("socket.io")(server);
 
 //data structure is as follows:
 // 0 = string, title
