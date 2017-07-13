@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,7 @@
     "express-session": "^1.15.3",
     "jquery": "^3.2.1",
     "socket.io": "^2.0.3",
+    "web-midi-api": "^1.4.4",
     "webpack": "^3.0.0"
   }
 }

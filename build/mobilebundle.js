@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10324,81 +10324,16 @@ return jQuery;
 
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {//works = [
-//	["Elite Dangerous Chatroom", "A room & session based chatsite", "one.jpg", "https://midterm-ed.herokuapp.com/", null, "https://github.com/kirbykibble/ed-midterm"],
-//	["Java Blacklister Application", "A java based application that generates data from pcap files", "two.png", null, "https://github.com/kirbykibble/blacklister/archive/master.zip", "https://github.com/kirbykibble/blacklister"],
-//	["This Website", "Built in less than 24 hours", "four.png", null, null, "https://github.com/kirbykibble/portfolio-Dylan"],
-//	["Dagobah Diner", "A fictitious fast food ordering application", "five.png", "http://dagobahtech.herokuapp.com/", null, "https://github.com/kirbykibble/acit2910"]
-//]
-
-$(document).ready(function() {	
-	generate();
-	console.log(mobilecheck());
-	if(mobilecheck()) {
-		console.log("working");
-		window.location.href = "/mobile";
-	}
-	document.getElementById("titleDisp").style.marginTop = 0;
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function() {
 	
-	document.getElementById("start").addEventListener("click", function() {
+	if(!mobilecheck()) {
 		console.log("working");
-		
-		var res = document.getElementById("resume");
-		var cont = document.getElementById("contact");
-		var work = document.getElementById("works");
-		var txt = document.getElementById("startDiv");
-		
-		txt.style.marginLeft = "-100vw";
-		res.style.marginLeft = "0";
-		cont.style.marginLeft = "0";
-		work.style.marginLeft = "0";
-		
-		setTimeout(function() {
-//			console.log("work");
-			res.style.transitionDuration = "0.5s";
-			cont.style.transitionDuration = "0.5s";
-			work.style.transitionDuration = "0.5s";
-		}, 1500);
-		
-		document.getElementById("titleDisp").style.backgroundPosition = "top right";
-//		res.addEventListener("click", function() {
-//			console.log("working");
-//		});
-		
-		cont.addEventListener("click", function() {
-//			console.log("working");
-			document.getElementById("titleDisp").style.marginTop = "-100vh";
-			document.getElementById("titleDisp").style.backgroundPosition = "right bottom";
-		});
-		
-		document.getElementById("return").addEventListener("click", function() {
-			document.getElementById("titleDisp").style.marginTop = "0";
-			document.getElementById("titleDisp").style.backgroundPosition = "right top";
-		});
-		document.getElementById("worksReturn").addEventListener("click", function() {
-			document.getElementById("titleDisp").style.marginTop = "0";
-			document.getElementById("titleDisp").style.backgroundPosition = "right top";
-			document.body.style.overflowY = "hidden";
-			document.getElementById("worksReturn").style.opacity = 0;
-			setTimeout(function() {
-				document.getElementById("worksReturn").style.display = "none"
-			}, 500);
-		});
-		work.addEventListener("click", function(){
-			document.getElementById("titleDisp").style.marginTop = "-200vh";
-			document.getElementById("titleDisp").style.backgroundPosition = "right bottom";
-			setTimeout(function() {
-				document.body.style.overflowY = "scroll";
-				document.getElementById("worksReturn").style.display = "inherit"
-				setTimeout(function() {
-					document.getElementById("worksReturn").style.opacity = 1;
-				}, 100);
-			}, 1500);
-		});
-	});
+		window.location.href = "/";
+	}
 	
 	function mobilecheck() {
   		var check = false;
@@ -10475,6 +10410,7 @@ $(document).ready(function() {
 			}
 		});
 	}
+	generate();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
