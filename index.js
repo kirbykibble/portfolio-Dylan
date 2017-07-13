@@ -4,6 +4,7 @@ const port = process.env.PORT || 10000;
 var app = express();
 
 const path = require("path");
+const bodyParser = require("body-parser");
 var navigator = require("web-midi-api");
 
 var pF = path.resolve(__dirname, "public");
@@ -43,12 +44,6 @@ app.get("/mobile", function(req, resp) {
 app.post("/getGenInfo", function(req, resp){
 	resp.send(works);
 });
-
-app.use(session({
-	secret: "pepperoni",
-	resave: true,
-	saveUninitialized: true
-}));
 server.listen(port, function(err) {
 	if(err) {
 		console.log(err);

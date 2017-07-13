@@ -161,6 +161,7 @@ a {
 #links {
 	color: white;
 	margin-top: 2vh;
+	font-size: 1.5vw;
 }
 #worksReturn {
 	position: fixed;
