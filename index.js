@@ -4,8 +4,6 @@ const port = process.env.PORT || 10000;
 var app = express();
 
 const path = require("path");
-const bodyParser = require("body-parser");
-const session = require("express-session");
 var navigator = require("web-midi-api");
 
 var pF = path.resolve(__dirname, "public");
