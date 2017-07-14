@@ -58,7 +58,7 @@ button {
 	padding: 0 2vw 0 2vw;
 	font-size: 3vw;
 	transition: all ease 0.5s;
-	margin-top: 5px;
+	margin-top: 10px;
 	max-width: 30vw;
 }
 #textDiv {
