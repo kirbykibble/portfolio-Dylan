@@ -10,6 +10,10 @@ var pF = path.resolve(__dirname, "public");
 
 const server = require("http").createServer(app);
 
+//data structure for generating work items. 
+//2D array is used.
+//If a link is not desired, use null instead. 
+
 //data structure is as follows:
 // 0 = string, title
 // 1 = string, description or subtitle

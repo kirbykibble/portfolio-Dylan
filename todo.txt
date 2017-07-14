@@ -1,0 +1,12 @@
+### High Priority ###
+Add user friendly login. ALlow for me to login and add items to the data structure through inputs rather than modifying the source code and uploading to heroku.
+
+Move the 2d array into a postgres database. Data structure shoudln't be too complicated, and should reflect on the current 2d one in place currently
+
+*** only do the first one when the second one is completed. 
+
+### Low Priority ###
+Get rid of the cheese I used for mobile friendliness.
+	-> use a bunch of media queries
+	-> make elements display: none;
+	
