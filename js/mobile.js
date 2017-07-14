@@ -1,5 +1,10 @@
 $(document).ready(function() {
-	
+	$(window).resize(function() {
+		console.log("resized");
+		if(!mobilecheck()) {
+			window.location.href = "/";
+		}
+	});
 	if(!mobilecheck()) {
 		console.log("working");
 		window.location.href = "/";

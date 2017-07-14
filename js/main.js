@@ -6,6 +6,12 @@
 //]
 
 $(document).ready(function() {	
+	$(window).resize(function() {
+		console.log("resized");
+		if(mobilecheck()) {
+			window.location.href = "/mobile";
+		}
+	});
 	generate();
 	console.log(mobilecheck());
 	if(mobilecheck()) {
@@ -71,7 +77,6 @@ $(document).ready(function() {
 			}, 1500);
 		});
 	});
-	
 	//checks if the user is on mobile. 
 	//Rather than modify the css with media queries or exonerous use of flex-boxing, I have opted for creating an entirely different mobile site altogether. 
 	//Mobilecheck will run on page load, and will redirect to the appropriate page.
@@ -157,4 +162,4 @@ $(document).ready(function() {
 			}
 		});
 	}
-}
+});

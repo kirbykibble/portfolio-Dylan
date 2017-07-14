@@ -10335,6 +10335,12 @@ return jQuery;
 //]
 
 $(document).ready(function() {	
+	$(window).resize(function() {
+		console.log("resized");
+		if(mobilecheck()) {
+			window.location.href = "/mobile";
+		}
+	});
 	generate();
 	console.log(mobilecheck());
 	if(mobilecheck()) {
@@ -10343,6 +10349,7 @@ $(document).ready(function() {
 	}
 	document.getElementById("titleDisp").style.marginTop = 0;
 	
+	//transition css
 	document.getElementById("start").addEventListener("click", function() {
 		console.log("working");
 		
@@ -10399,6 +10406,10 @@ $(document).ready(function() {
 			}, 1500);
 		});
 	});
+	//checks if the user is on mobile. 
+	//Rather than modify the css with media queries or exonerous use of flex-boxing, I have opted for creating an entirely different mobile site altogether. 
+	//Mobilecheck will run on page load, and will redirect to the appropriate page.
+	//I would run mobile check serverside, however the window and navigator objects do not exist serverside. 
 	
 	function mobilecheck() {
   		var check = false;
@@ -10406,6 +10417,11 @@ $(document).ready(function() {
   		return check;
 	};
 	
+	//uses an ajax call to get a 2d array from the server. 
+	//Iterates through the first layer of arrays and uses the second layer as data
+	//data is then used to generate works and the whatnot. 
+	//Checks the booleans for links for use and fills gaps between links with a dot. 
+		//uses a if/else block... will try to create a more elegant solution later.
 	function generate() {
 		$.ajax({
 			url: "/getGenInfo",

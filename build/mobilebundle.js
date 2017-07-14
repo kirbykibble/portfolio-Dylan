@@ -10329,7 +10329,12 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function() {
-	
+	$(window).resize(function() {
+		console.log("resized");
+		if(!mobilecheck()) {
+			window.location.href = "/";
+		}
+	});
 	if(!mobilecheck()) {
 		console.log("working");
 		window.location.href = "/";
