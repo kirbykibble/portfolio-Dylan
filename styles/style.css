@@ -87,6 +87,14 @@ button {
 	margin-left: 12vw;
 	transition: all ease 1.4s;
 }
+#source {
+	font-size: 1.2vw;
+	color: rgba(255,255,255,0.9);
+	font-style: italic;
+}
+#quote {
+	padding-right: 1.5vw;
+}
 button:hover {
 	padding-left: 10vw;
 }

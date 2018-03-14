@@ -24,7 +24,7 @@ const server = require("http").createServer(app);
 works = [
 	["Elite Dangerous Chatroom", "A room & session based chatsite", "one.jpg", "https://midterm-ed.herokuapp.com/", null, "https://github.com/kirbykibble/ed-midterm"],
 	["Java Blacklister Application", "A java based application that generates data from pcap files", "two.png", null, "https://github.com/kirbykibble/blacklister/archive/master.zip", "https://github.com/kirbykibble/blacklister"],
-	["This Website", "Built in less than 24 hours", "four.png", null, null, "https://github.com/kirbykibble/portfolio-Dylan"],
+	["This Website", "Built in less than 24 hours overall", "four.png", null, null, "https://github.com/kirbykibble/portfolio-Dylan"],
 	["Dagobah Diner", "A fictitious fast food ordering application", "five.png", "http://dagobahtech.herokuapp.com/", null, "https://github.com/kirbykibble/acit2910"]
 ]
 
