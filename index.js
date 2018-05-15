@@ -25,7 +25,8 @@ works = [
 	["Elite Dangerous Chatroom", "A room & session based chatsite", "one.jpg", "https://midterm-ed.herokuapp.com/", null, "https://github.com/kirbykibble/ed-midterm"],
 	["Java Blacklister Application", "A java based application that generates data from pcap files", "two.png", null, "https://github.com/kirbykibble/blacklister/archive/master.zip", "https://github.com/kirbykibble/blacklister"],
 	["This Website", "Built in less than 24 hours overall", "four.png", null, null, "https://github.com/kirbykibble/portfolio-Dylan"],
-	["Dagobah Diner", "A fictitious fast food ordering application", "five.png", "http://dagobahtech.herokuapp.com/", null, "https://github.com/kirbykibble/acit2910"]
+	["Dagobah Diner", "A fictitious fast food ordering application", "five.png", "http://dagobahtech.herokuapp.com/", null, "https://github.com/kirbykibble/acit2910"],
+	["Task Ask", "A <a href='https://slack.com/'>Slack </a>application for project and task management", "six.png", null, "https://github.com/kirbykibble/TaskAsk/archive/master.zip", "https://github.com/kirbykibble/TaskAsk.git"]
 ]
 
 app.use("/public", express.static("public"));
