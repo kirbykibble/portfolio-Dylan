@@ -10380,7 +10380,7 @@ return jQuery;
 						hosted.innerHTML = "Check it out";
 						links.appendChild(hosted);
 
-						if((works[i][4] != null) || (works[i][5] != null)) {
+						if((works[i][4] != null) || (works[i][5] != null || works[i][6] != null)) {
 							links.innerHTML = links.innerHTML + " • ";
 						}
 
@@ -10392,7 +10392,7 @@ return jQuery;
 						download.innerHTML = "Download";
 						links.appendChild(download);
 
-						if(works[i][5] != null) {
+						if(works[i][5] != null || works[i][6] != null) {
 							links.innerHTML = links.innerHTML + " • ";
 						}
 					}
@@ -10402,6 +10402,17 @@ return jQuery;
 						github.target = "_blank";
 						github.innerHTML = "Source Code";
 						links.appendChild(github);
+						
+						if(works[i][6] != null) {
+							links.innerHTML = links.innerHTML + " • "	
+						}
+					}
+					if(works[i][6] != null) {
+						report = document.createElement("a");
+						report.href = works[i][6];
+						report.target = "_blank";
+						report.innerHTML = "Project Report";
+						links.appendChild(report);
 					}
 
 					itemOuter.appendChild(head);
